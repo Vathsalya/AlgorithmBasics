@@ -11,8 +11,8 @@ package assignment.arrays;
 public class MagicIndexFinder {
 
 	public static void main(String[] args) {
-		 int arr[] = {-11, -1, 0, 3, 10, 18, 20, 50};
-		// int arr[] = {0, 1, 23, 30};
+		// int arr[] = {-11, -1, 0, 3, 10, 18, 20, 50};
+		 int arr[] = {0, 1, 23, 30};
 		// int arr[] = { 0 };
 		if (arr != null && arr.length != 0) {
 			int index = findMagicIndex(0, arr.length - 1, arr);
