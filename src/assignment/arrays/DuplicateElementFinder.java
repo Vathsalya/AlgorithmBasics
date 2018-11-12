@@ -23,11 +23,16 @@ public class DuplicateElementFinder {
 	 * @return
 	 */
 	private static int findDuplicateElement(int[] arr) {
-		int carryOver = 0;
+		int sumOfAllValues =0;
+		int sumOfAllIndices=0;
 		for (int i = 0; i < arr.length; i++) {
-			carryOver += (arr[i] - i);
+			sumOfAllValues+=arr[i];
+			sumOfAllIndices+=i;
+			
 		}
-		return carryOver;
+		int duplicate = sumOfAllValues-sumOfAllIndices;
+		
+		return duplicate;
 	}
 
 }
